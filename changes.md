@@ -11,4 +11,4 @@ ThingDefs
 
 ThingDefs_Race
 - The new Races_CrystalBase only defines base crystal parent. Old Races_Crystal contains other defs for Crystal_Prism and Crystal_PrismMini. Those are now moved into Races_CrystalConstruct, together with other constructs such as Crystal_Guardian and Crystal_GuardianP (used to be in Races_CrystalDeveloped) and the new Crystal_NeutralPrism, Crystal_Preserver, and Crystal_Specter
-- Races_CrystalHumanlike are basically the same thing, albeit much simpler in rewrite version. Defs names are unchanged
+- Races_CrystalHumanlike are basically the same thing, albeit much simpler in rewrite version. Defs names are unchanged. Alien_Ascendant no longer exist
