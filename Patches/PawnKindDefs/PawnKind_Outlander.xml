@@ -50,7 +50,7 @@
     </value>
   </Operation>
   
-  <!-- Below are most probably for pirate factions, might change later -->
+  <!-- TODO: Below are most probably for pirate factions, might change later -->
 
   <!--<Operation Class="PatchOperationAddModExtension">
     <xpath>/Defs/PawnKindDef[defName="CrystalloidVanguard"]</xpath>
