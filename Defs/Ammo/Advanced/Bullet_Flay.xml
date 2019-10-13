@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+    <ThingCategoryDef>
+      <defName>AmmoFlay</defName>
+      <label>psionic beam</label>
+      <parent>AmmoAdvanced</parent>
+      <iconPath>UI/Icons/ThingCategories/CaliberCharge</iconPath>
+    </ThingCategoryDef>
+	
+	<!-- ==================== AmmoSet ========================== -->
+
+  <CombatExtended.AmmoSetDef>
+    <defName>AmmoSet_Flay</defName>
+    <label>psionic flay ammo</label>
+    <ammoTypes>
+      <Ammo_Flay>Bullet_Flay</Ammo_Flay>
+    </ammoTypes>
+  </CombatExtended.AmmoSetDef>
+	
+	<!-- ==================== Ammo ========================== -->
+
+  <ThingDef Name="FlayBase" ParentName="AmmoBase" Abstract="True">
+    <description>psionic flay ammo</description>
+    <statBases>
+	  <Mass>0.01</Mass>
+	  <Bulk>0.02</Bulk>
+    </statBases>
+    <tradeTags>
+      <li>CE_AutoEnableTrade</li>
+      <li>CE_AutoEnableCrafting</li>
+    </tradeTags>
+    <thingCategories>
+      <li>AmmoFlay</li>
+    </thingCategories>
+  </ThingDef>
+
+  <ThingDef ParentName="FlayBase">
+    <defName>Ammo_Flay</defName>
+    <label>psionic flay cartridge</label>
+    <graphicData>
+      <texPath>Things/Ammo/Rifle/FMJ</texPath>
+      <graphicClass>Graphic_StackCount</graphicClass>
+    </graphicData>
+    <statBases>
+      <MarketValue>0.95</MarketValue>
+    </statBases>
+    <ammoClass>FullMetalJacket</ammoClass>
+  </ThingDef>
+	
+	<!-- ================== Projectiles ================== -->
+
+  <ThingDef Name="BaseFlay" ParentName="BaseBullet" Abstract="true">
+    <graphicData>
+      <texPath>Things/Projectile/FlayShot</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+	  <shaderType>TransparentPostLight</shaderType>
+      <drawSize>(3,3)</drawSize>
+    </graphicData>
+    <projectile>
+      <damageDef>Psionic</damageDef>
+      <speed>86</speed>
+    </projectile>
+  </ThingDef>
+
+  <ThingDef ParentName="BaseFlay">
+    <defName>Bullet_Flay</defName>
+    <label>psionic flay</label>
+    <projectile>
+      <damageAmountBase>19</damageAmountBase>
+      <armorPenetration>0.95</armorPenetration>
+    </projectile>
+  </ThingDef>
+	
+</Defs>

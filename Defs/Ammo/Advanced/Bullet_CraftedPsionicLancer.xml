@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+    <ThingCategoryDef>
+      <defName>AmmoCraftedPsionicLancer</defName>
+      <label>psionic beam CPL</label>
+      <parent>AmmoAdvanced</parent>
+      <iconPath>UI/Icons/ThingCategories/CaliberCharge</iconPath>
+    </ThingCategoryDef>
+	
+	<!-- ==================== AmmoSet ========================== -->
+
+  <CombatExtended.AmmoSetDef>
+    <defName>AmmoSet_CraftedPsionicLancer</defName>
+    <label>psionic beam ammo CPL</label>
+    <ammoTypes>
+      <Ammo_CraftedPsionicLancer>Bullet_CraftedPsionicLancer</Ammo_CraftedPsionicLancer>
+    </ammoTypes>
+  </CombatExtended.AmmoSetDef>
+	
+	<!-- ==================== Ammo ========================== -->
+
+  <ThingDef Name="CraftedPsionicLancerBase" ParentName="AmmoBase" Abstract="True">
+    <description>psionic beam ammo CPL</description>
+    <statBases>
+	  <Mass>0.01</Mass>
+	  <Bulk>0.02</Bulk>
+    </statBases>
+    <tradeTags>
+      <li>CE_AutoEnableTrade</li>
+      <li>CE_AutoEnableCrafting</li>
+    </tradeTags>
+    <thingCategories>
+      <li>AmmoCraftedPsionicLancer</li>
+    </thingCategories>
+  </ThingDef>
+
+  <ThingDef ParentName="CraftedPsionicLancerBase">
+    <defName>Ammo_CraftedPsionicLancer</defName>
+    <label>psionic beam cartridge CPL</label>
+    <graphicData>
+      <texPath>Things/Ammo/Rifle/FMJ</texPath>
+      <graphicClass>Graphic_StackCount</graphicClass>
+    </graphicData>
+    <statBases>
+      <MarketValue>0.95</MarketValue>
+    </statBases>
+    <ammoClass>FullMetalJacket</ammoClass>
+  </ThingDef>
+	
+	<!-- ================== Projectiles ================== -->
+
+  <ThingDef Name="BaseCraftedPsionicLancer" ParentName="BaseBullet" Abstract="true">
+    <graphicData>
+      <texPath>Things/Projectile/PsionicBullet2</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+	  <shaderType>TransparentPostLight</shaderType>
+      <drawSize>(3,3)</drawSize>
+    </graphicData>
+    <projectile>
+      <damageDef>Psionic</damageDef>
+      <speed>78</speed>
+    </projectile>
+  </ThingDef>
+
+  <ThingDef ParentName="BaseCraftedPsionicLancer">
+    <defName>Bullet_CraftedPsionicLancer</defName>
+    <label>psionic beam</label>
+    <projectile>
+      <damageAmountBase>18</damageAmountBase>
+      <armorPenetration>0.8</armorPenetration>
+    </projectile>
+  </ThingDef>
+	
+</Defs>

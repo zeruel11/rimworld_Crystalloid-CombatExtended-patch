@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+    <ThingCategoryDef>
+      <defName>AmmoCraftedPsionicRifle</defName>
+      <label>psionic beam CR</label>
+      <parent>AmmoAdvanced</parent>
+      <iconPath>UI/Icons/ThingCategories/CaliberCharge</iconPath>
+    </ThingCategoryDef>
+	
+	<!-- ==================== AmmoSet ========================== -->
+
+  <CombatExtended.AmmoSetDef>
+    <defName>AmmoSet_CraftedPsionicRifle</defName>
+    <label>psionic beam ammo CR</label>
+    <ammoTypes>
+      <Ammo_CraftedPsionicRifle>Bullet_CraftedPsionicRifle</Ammo_CraftedPsionicRifle>
+    </ammoTypes>
+  </CombatExtended.AmmoSetDef>
+	
+	<!-- ==================== Ammo ========================== -->
+
+  <ThingDef Name="CraftedPsionicRifleBase" ParentName="AmmoBase" Abstract="True">
+    <description>psionic beam ammo CR</description>
+    <statBases>
+	  <Mass>0.01</Mass>
+	  <Bulk>0.02</Bulk>
+    </statBases>
+    <tradeTags>
+      <li>CE_AutoEnableTrade</li>
+      <li>CE_AutoEnableCrafting</li>
+    </tradeTags>
+    <thingCategories>
+      <li>AmmoCraftedPsionicRifle</li>
+    </thingCategories>
+  </ThingDef>
+
+  <ThingDef ParentName="CraftedPsionicRifleBase">
+    <defName>Ammo_CraftedPsionicRifle</defName>
+    <label>psionic beam cartridge CR</label>
+    <graphicData>
+      <texPath>Things/Ammo/Rifle/FMJ</texPath>
+      <graphicClass>Graphic_StackCount</graphicClass>
+    </graphicData>
+    <statBases>
+      <MarketValue>0.95</MarketValue>
+    </statBases>
+    <ammoClass>FullMetalJacket</ammoClass>
+  </ThingDef>
+	
+	<!-- ================== Projectiles ================== -->
+
+  <ThingDef Name="BaseCraftedPsionicRifle" ParentName="BaseBullet" Abstract="true">
+    <graphicData>
+      <texPath>Things/Projectile/PsionicBullet</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+	  <shaderType>TransparentPostLight</shaderType>
+      <drawSize>(3,3)</drawSize>
+    </graphicData>
+    <projectile>
+      <damageDef>Psionic</damageDef>
+      <speed>66</speed>
+    </projectile>
+  </ThingDef>
+
+  <ThingDef ParentName="BaseCraftedPsionicRifle">
+    <defName>Bullet_CraftedPsionicRifle</defName>
+    <label>psionic beam</label>
+    <projectile>
+      <damageAmountBase>7</damageAmountBase>
+      <armorPenetration>0.75</armorPenetration>
+    </projectile>
+  </ThingDef>
+	
+</Defs>

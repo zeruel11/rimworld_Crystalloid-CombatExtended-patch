@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+    <ThingCategoryDef>
+      <defName>AmmoShardShotgun</defName>
+      <label>Shard Shotgun ammo</label>
+      <parent>AmmoAdvanced</parent>
+      <iconPath>UI/Icons/ThingCategories/CaliberCharge</iconPath>
+    </ThingCategoryDef>
+	
+	<!-- ==================== AmmoSet ========================== -->
+
+  <CombatExtended.AmmoSetDef>
+    <defName>AmmoSet_ShardShotgun</defName>
+    <label>Shard Shotgun ammo</label>
+    <ammoTypes>
+      <Ammo_ShardShotgun>Bullet_ShardShotgun</Ammo_ShardShotgun>
+    </ammoTypes>
+  </CombatExtended.AmmoSetDef>
+	
+	<!-- ==================== Ammo ========================== -->
+
+  <ThingDef Name="ShardShotgunBase" ParentName="AmmoBase" Abstract="True">
+    <description>Shard Shotgun ammo</description>
+    <statBases>
+	  <Mass>0.01</Mass>
+	  <Bulk>0.02</Bulk>
+    </statBases>
+    <tradeTags>
+      <li>CE_AutoEnableTrade</li>
+      <li>CE_AutoEnableCrafting</li>
+    </tradeTags>
+    <thingCategories>
+      <li>AmmoShardShotgun</li>
+    </thingCategories>
+  </ThingDef>
+
+  <ThingDef ParentName="ShardShotgunBase">
+    <defName>Ammo_ShardShotgun</defName>
+    <label>Shard Shotgun cartridge</label>
+    <graphicData>
+      <texPath>Things/Ammo/Shotgun/Shot</texPath>
+      <graphicClass>Graphic_StackCount</graphicClass>
+    </graphicData>
+    <statBases>
+      <MarketValue>1</MarketValue>
+    </statBases>
+    <ammoClass>BuckShot</ammoClass>
+  </ThingDef>
+	
+	<!-- ================== Projectiles ================== -->
+
+  <ThingDef Name="BaseShardShotgun" ParentName="BaseBullet" Abstract="true">
+    <graphicData>
+      <texPath>Things/Projectile/CrystalShard</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <projectile>
+      <damageDef>Bullet</damageDef>
+      <speed>49</speed>
+    </projectile>
+  </ThingDef>
+
+  <ThingDef ParentName="BaseShardShotgun">
+    <defName>Bullet_ShardShotgun</defName>
+    <label>Shotgun Blast</label>
+    <projectile>
+      <damageAmountBase>2</damageAmountBase>
+      <armorPenetration>0.4</armorPenetration>
+    </projectile>
+  </ThingDef>
+	
+</Defs>

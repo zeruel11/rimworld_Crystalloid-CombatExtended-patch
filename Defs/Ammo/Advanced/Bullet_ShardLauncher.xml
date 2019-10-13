@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+    <ThingCategoryDef>
+      <defName>AmmoShardLauncher</defName>
+      <label>Shard Launcher</label>
+      <parent>AmmoAdvanced</parent>
+      <iconPath>UI/Icons/ThingCategories/CaliberCharge</iconPath>
+    </ThingCategoryDef>
+	
+	<!-- ==================== AmmoSet ========================== -->
+
+  <CombatExtended.AmmoSetDef>
+    <defName>AmmoSet_ShardLauncher</defName>
+    <label>Shard Launcher</label>
+    <ammoTypes>
+      <Ammo_ShardLauncher>Bullet_ShardLauncher</Ammo_ShardLauncher>
+    </ammoTypes>
+  </CombatExtended.AmmoSetDef>
+	
+	<!-- ==================== Ammo ========================== -->
+
+  <ThingDef Name="ShardLauncherBase" ParentName="AmmoBase" Abstract="True">
+    <description>Shard Launcher</description>
+    <statBases>
+	  <Mass>0.05</Mass>
+	  <Bulk>0.05</Bulk>
+    </statBases>
+    <tradeTags>
+      <li>CE_AutoEnableTrade</li>
+      <li>CE_AutoEnableCrafting</li>
+    </tradeTags>
+    <thingCategories>
+      <li>AmmoShardLauncher</li>
+    </thingCategories>
+  </ThingDef>
+
+  <ThingDef ParentName="ShardLauncherBase">
+    <defName>Ammo_ShardLauncher</defName>
+    <label>Shard Launcher</label>
+    <graphicData>
+      <texPath>Things/Ammo/Rifle/FMJ</texPath>
+      <graphicClass>Graphic_StackCount</graphicClass>
+    </graphicData>
+    <statBases>
+      <MarketValue>2</MarketValue>
+    </statBases>
+    <ammoClass>RocketFrag</ammoClass>
+  </ThingDef>
+	
+	<!-- ================== Projectiles ================== -->
+
+  <ThingDef Name="BaseShardLauncher" ParentName="BaseBullet" Abstract="true">
+    <graphicData>
+      <texPath>Things/Projectile/ShardCluster</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <projectile>
+      <damageDef>ShardExplosion</damageDef>
+	  <explosionRadius>2.4</explosionRadius>
+      <speed>45</speed>
+    </projectile>
+  </ThingDef>
+
+  <ThingDef ParentName="BaseShardLauncher">
+    <defName>Bullet_ShardLauncher</defName>
+    <label>Shard Launcher</label>
+	<projectile>
+		<explosionRadius>2.4</explosionRadius>
+		<damageDef>ShardExplosion</damageDef>
+		<damageAmountBase>12</damageAmountBase>
+	</projectile>
+	<comps>
+		<li Class="CombatExtended.CompProperties_ExplosiveCE">
+			<fragRange>3</fragRange>
+			<fragments>
+      <Fragment_RocketFrag>150</Fragment_RocketFrag>
+			</fragments>
+			<soundExplode>MortarBomb_Explode</soundExplode>
+		</li>
+	</comps>
+  </ThingDef>
+	
+</Defs>
