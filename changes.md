@@ -4,4 +4,11 @@ PawnDefs
 - Pawn Crystal changed to Constructs, new Preserver and Crystal Spectre
 - PawnKinds_CrystalSlave and PawnKinds_CrystalSpacer defs are now combined into PawnKinds_Refugees
 - PawnKinds_CrystalLoyalist changed into PawnKinds_Loyalist and are mostly unchanged, CrystalloidFlayer no longer exists
-- PawnKinds_CrystalRebel now divided into PawnKinds_Outlander, PawnKinds_Mercenary, and PawnKinds_Pirate. CrystalIndependent faction are also divided into OutlanderCivil and Pirate (or is that new?).
+- PawnKinds_CrystalRebel now divided into PawnKinds_Outlander, PawnKinds_Mercenary, and PawnKinds_Pirate. CrystalIndependent faction are also divided into OutlanderCivil and Pirate (or is that new?)
+
+ThingDefs
+- Weapons_CrystalBuildableGuns mostly stays the same. Weapons_CrystalGuns and Weapons_CrystalMelee no longer exists.
+
+ThingDefs_Race
+- The new Races_CrystalBase only defines base crystal parent. Old Races_Crystal contains other defs for the prisms. Those are now moved into Races_CrystalConstruct, along with the other constructs such as Guardians (used to be in Races_CrystalDeveloped) and the new Spectres
+- Races_CrystalHumanlike are basically the same thing, albeit much simpler in rewrite version. Defs names are unchanged
