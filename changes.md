@@ -1,4 +1,4 @@
-## This file describes what changes between old crystalloid (B17 version) and new crystalloid rewrite 1.0 version in relation to the patch. Mostly this is just a reminder for myself since AtomicRavioli didn't mention the changes. Considering getting in touch.
+## This file describes what changes between old crystalloid (B17 version) and new crystalloid rewrite 1.0 version in relation to the patch made by Saebbi for B18. Mostly this is just a reminder for myself since AtomicRavioli didn't mention the changes. Considering getting in touch.
 
 PawnDefs
 - Pawn Crystal changed to Constructs, new Preserver and Crystal Spectre
@@ -10,5 +10,5 @@ ThingDefs
 - Weapons_CrystalBuildableGuns mostly stays the same. Weapons_CrystalGuns and Weapons_CrystalMelee no longer exists.
 
 ThingDefs_Race
-- The new Races_CrystalBase only defines base crystal parent. Old Races_Crystal contains other defs for the prisms. Those are now moved into Races_CrystalConstruct, along with the other constructs such as Guardians (used to be in Races_CrystalDeveloped) and the new Spectres
+- The new Races_CrystalBase only defines base crystal parent. Old Races_Crystal contains other defs for Crystal_Prism and Crystal_PrismMini. Those are now moved into Races_CrystalConstruct, together with other constructs such as Crystal_Guardian and Crystal_GuardianP (used to be in Races_CrystalDeveloped) and the new Crystal_NeutralPrism, Crystal_Preserver, and Crystal_Specter
 - Races_CrystalHumanlike are basically the same thing, albeit much simpler in rewrite version. Defs names are unchanged
