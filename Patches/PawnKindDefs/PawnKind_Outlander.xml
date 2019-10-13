@@ -3,7 +3,19 @@
 <Patch>
   
    <Operation Class="PatchOperationAddModExtension">
-    <xpath>/Defs/PawnKindDef[defName="CrystalloidCommoner"]</xpath>
+    <xpath>/Defs/PawnKindDef[defName="CrystalloidVillager"]</xpath>
+    <value>
+      <li Class="CombatExtended.LoadoutPropertiesExtension">
+        <primaryMagazineCount>
+          <min>3</min>
+          <max>5</max>
+        </primaryMagazineCount>
+      </li>
+    </value>
+  </Operation>
+
+  <Operation Class="PatchOperationAddModExtension">
+    <xpath>/Defs/PawnKindDef[defName="ValkyrieVillager"]</xpath>
     <value>
       <li Class="CombatExtended.LoadoutPropertiesExtension">
         <primaryMagazineCount>
@@ -15,19 +27,19 @@
   </Operation>
   
   <Operation Class="PatchOperationAddModExtension">
-    <xpath>/Defs/PawnKindDef[defName="CrystalloidCounselor"]</xpath>
+    <xpath>/Defs/PawnKindDef[defName="CrystalloidTown_Guard"]</xpath>
     <value>
       <li Class="CombatExtended.LoadoutPropertiesExtension">
         <primaryMagazineCount>
-          <min>3</min>
+          <min>4</min>
           <max>5</max>
         </primaryMagazineCount>
       </li>
     </value>
   </Operation>
-  
+
   <Operation Class="PatchOperationAddModExtension">
-    <xpath>/Defs/PawnKindDef[defName="CrystalloidGuard"]</xpath>
+    <xpath>/Defs/PawnKindDef[defName="ValkyrieTown_Guard"]</xpath>
     <value>
       <li Class="CombatExtended.LoadoutPropertiesExtension">
         <primaryMagazineCount>
@@ -38,7 +50,9 @@
     </value>
   </Operation>
   
-  <Operation Class="PatchOperationAddModExtension">
+  <!-- TODO: Below are most probably for pirate factions, might change later -->
+
+  <!--<Operation Class="PatchOperationAddModExtension">
     <xpath>/Defs/PawnKindDef[defName="CrystalloidVanguard"]</xpath>
     <value>
       <li Class="CombatExtended.LoadoutPropertiesExtension">
@@ -84,6 +98,6 @@
         </primaryMagazineCount>
       </li>
     </value>
-  </Operation>
+  </Operation> -->
   
 </Patch>
