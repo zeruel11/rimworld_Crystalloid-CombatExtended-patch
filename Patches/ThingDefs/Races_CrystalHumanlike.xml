@@ -16,8 +16,7 @@
 			<li Class="CombatExtended.CompProperties_Inventory" />
 		</value>
 	</Operation>
-	
-	
+
 	<!-- TODO: add armor ratings?? -->
 	<Operation Class="PatchOperationAddModExtension">
 		<success>Always</success>
@@ -42,6 +41,14 @@
 					<power>7</power>
 					<cooldownTime>1.6</cooldownTime>
 					<linkedBodyPartsGroup>LeftHand</linkedBodyPartsGroup>
+					<surpriseAttack>
+						<extraMeleeDamages>
+							<li>
+								<def>Stun</def>
+								<amount>22</amount>
+							</li>
+						</extraMeleeDamages>
+					</surpriseAttack>
 					<armorPenetration>0.1</armorPenetration>
 				</li>
 				<li Class="CombatExtended.ToolCE">
@@ -52,6 +59,26 @@
 					<power>7</power>
 					<cooldownTime>1.6</cooldownTime>
 					<linkedBodyPartsGroup>RightHand</linkedBodyPartsGroup>
+					<surpriseAttack>
+						<extraMeleeDamages>
+							<li>
+								<def>Stun</def>
+								<amount>22</amount>
+							</li>
+						</extraMeleeDamages>
+					</surpriseAttack>
+					<armorPenetration>0.1</armorPenetration>
+				</li>
+				<li Class="CombatExtended.ToolCE">
+					<label>head</label>
+					<capacities>
+						<li>Blunt</li>
+					</capacities>
+					<power>5</power>
+					<cooldownTime>1.8</cooldownTime>
+					<linkedBodyPartsGroup>HeadAttackTool</linkedBodyPartsGroup>
+					<ensureLinkedBodyPartsGroupAlwaysUsable>true</ensureLinkedBodyPartsGroupAlwaysUsable>
+					<chanceFactor>0.2</chanceFactor>
 					<armorPenetration>0.1</armorPenetration>
 				</li>
 			</tools>
@@ -79,12 +106,12 @@
 		<xpath>*/AlienRace.ThingDef_AlienRace[defName="Alien_Crystalloid"]/comps</xpath>
 		<value>
 			<li>
-			  <compClass>CombatExtended.CompPawnGizmo</compClass>
+				<compClass>CombatExtended.CompPawnGizmo</compClass>
 			</li>
 			<li Class="CombatExtended.CompProperties_Suppressable" />
 		</value>
 	</Operation>
-	
+
 	<Operation Class="PatchOperationAddModExtension">
 		<success>Always</success>
 		<xpath>*/AlienRace.ThingDef_AlienRace[defName="Alien_CrystalValkyrie"]</xpath>
@@ -108,6 +135,14 @@
 					<power>9.5</power>
 					<cooldownTime>1.6</cooldownTime>
 					<linkedBodyPartsGroup>LeftHand</linkedBodyPartsGroup>
+					<surpriseAttack>
+						<extraMeleeDamages>
+							<li>
+								<def>Stun</def>
+								<amount>28</amount>
+							</li>
+						</extraMeleeDamages>
+					</surpriseAttack>
 					<armorPenetration>0.12</armorPenetration>
 				</li>
 				<li Class="CombatExtended.ToolCE">
@@ -118,6 +153,26 @@
 					<power>9.5</power>
 					<cooldownTime>1.6</cooldownTime>
 					<linkedBodyPartsGroup>RightHand</linkedBodyPartsGroup>
+					<surpriseAttack>
+						<extraMeleeDamages>
+							<li>
+								<def>Stun</def>
+								<amount>28</amount>
+							</li>
+						</extraMeleeDamages>
+					</surpriseAttack>
+					<armorPenetration>0.12</armorPenetration>
+				</li>
+				<li Class="CombatExtended.ToolCE">
+					<label>head</label>
+					<capacities>
+						<li>Blunt</li>
+					</capacities>
+					<power>6</power>
+					<cooldownTime>1.8</cooldownTime>
+					<linkedBodyPartsGroup>HeadAttackTool</linkedBodyPartsGroup>
+					<ensureLinkedBodyPartsGroupAlwaysUsable>true</ensureLinkedBodyPartsGroupAlwaysUsable>
+					<chanceFactor>0.2</chanceFactor>
 					<armorPenetration>0.12</armorPenetration>
 				</li>
 			</tools>
@@ -145,11 +200,10 @@
 		<xpath>*/AlienRace.ThingDef_AlienRace[defName="Alien_CrystalValkyrie"]/comps</xpath>
 		<value>
 			<li>
-			  <compClass>CombatExtended.CompPawnGizmo</compClass>
+				<compClass>CombatExtended.CompPawnGizmo</compClass>
 			</li>
 			<li Class="CombatExtended.CompProperties_Suppressable" />
 		</value>
 	</Operation>
 
 </Patch>
-
