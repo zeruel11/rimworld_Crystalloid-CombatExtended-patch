@@ -1,13 +1,14 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <Patch>
 
-	<Operation Class="PatchOperationReplace">
+	<!-- REVIEW: change to use CE RPG inventory -->
+	<!-- <Operation Class="PatchOperationReplace">
 		<success>Always</success>
 		<xpath>*/ThingDef[@Name="CrystalBasePawn"]/inspectorTabs/li[.="ITab_Pawn_Gear"]</xpath>
 		<value>
 			<li>CombatExtended.ITab_Inventory</li>
 		</value>
-	</Operation>
+	</Operation> -->
 
 	<Operation Class="PatchOperationAdd">
 		<success>Always</success>
