@@ -4,18 +4,17 @@
   <Operation Class="CombatExtended.PatchOperationMakeGunCECompatible">
     <defName>Gun_ShardPistol</defName>
     <statBases>
-      <Mass>1.50</Mass>
+      <Mass>1.30</Mass>
       <RangedWeapon_Cooldown>0.44</RangedWeapon_Cooldown>
       <SightsEfficiency>1.0</SightsEfficiency>
       <ShotSpread>0.12</ShotSpread>
       <SwayFactor>1.50</SwayFactor>
       <Bulk>1.50</Bulk>
-	  <WorkToMake>15000</WorkToMake>
+      <WorkToMake>4000</WorkToMake>
     </statBases>
-	<costList>
-	  <Crystal>20</Crystal>
-      <RefinedCrystal>5</RefinedCrystal>
-      <Component>2</Component>
+    <costList>
+      <Crysteel>40</Crysteel>
+      <ComponentIndustrial>2</ComponentIndustrial>
     </costList>
     <Properties>
       <verbClass>CombatExtended.Verb_ShootCE</verbClass>
@@ -23,12 +22,12 @@
       <defaultProjectile>Bullet_ShardPistol</defaultProjectile>
       <warmupTime>0.3</warmupTime>
       <range>24</range>
-      <soundCast>ShotChargeRifle</soundCast>
-      <soundCastTail>GunTail_Medium</soundCastTail>
+      <soundCast>CW_ShardPistol</soundCast>
+      <soundCastTail>GunTail_Light</soundCastTail>
       <muzzleFlashScale>9</muzzleFlashScale>
-        <targetParams>
-          <canTargetLocations>true</canTargetLocations>
-        </targetParams>
+      <targetParams>
+        <canTargetLocations>true</canTargetLocations>
+      </targetParams>
     </Properties>
     <AmmoUser>
       <magazineSize>12</magazineSize>
@@ -54,12 +53,12 @@
       <Bulk>4.50</Bulk>
       <WorkToMake>45000</WorkToMake>
     </statBases>
-	<costList>
+    <costList>
       <RefinedCrystal>25</RefinedCrystal>
       <Component>6</Component>
     </costList>
     <Properties>
-		<recoilAmount>0.20</recoilAmount>
+      <recoilAmount>0.20</recoilAmount>
       <verbClass>CombatExtended.Verb_ShootCE</verbClass>
       <hasStandardCommand>true</hasStandardCommand>
       <defaultProjectile>Bullet_CraftedPsionicRifle</defaultProjectile>
@@ -68,11 +67,11 @@
       <soundCast>ShotChargeRifle</soundCast>
       <soundCastTail>GunTail_Medium</soundCastTail>
       <muzzleFlashScale>9</muzzleFlashScale>
-	  <ticksBetweenBurstShots>7</ticksBetweenBurstShots>
-        <burstShotCount>3</burstShotCount>
-        <targetParams>
-          <canTargetLocations>true</canTargetLocations>
-        </targetParams>
+      <ticksBetweenBurstShots>7</ticksBetweenBurstShots>
+      <burstShotCount>3</burstShotCount>
+      <targetParams>
+        <canTargetLocations>true</canTargetLocations>
+      </targetParams>
     </Properties>
     <AmmoUser>
       <magazineSize>36</magazineSize>
@@ -80,14 +79,14 @@
       <ammoSet>AmmoSet_CraftedPsionicRifle</ammoSet>
     </AmmoUser>
     <FireModes>
-    	<aiUseBurstMode>TRUE</aiUseBurstMode>
-    	<aiAimMode>AimedShot</aiAimMode>
+      <aiUseBurstMode>TRUE</aiUseBurstMode>
+      <aiAimMode>AimedShot</aiAimMode>
     </FireModes>
     <weaponTags>
       <li>CraftedCrystalGunMed</li>
     </weaponTags>
   </Operation>
-  
+
   <Operation Class="CombatExtended.PatchOperationMakeGunCECompatible">
     <defName>Gun_CrystalCraftedPsionicLightLancer</defName>
     <statBases>
@@ -99,12 +98,12 @@
       <Bulk>4.50</Bulk>
       <WorkToMake>55000</WorkToMake>
     </statBases>
-	<costList>
+    <costList>
       <RefinedCrystal>30</RefinedCrystal>
       <Component>12</Component>
     </costList>
     <Properties>
-		<recoilAmount>0.20</recoilAmount>
+      <recoilAmount>0.20</recoilAmount>
       <verbClass>CombatExtended.Verb_ShootCE</verbClass>
       <hasStandardCommand>true</hasStandardCommand>
       <defaultProjectile>Bullet_CraftedPsionicLancer</defaultProjectile>
@@ -113,9 +112,9 @@
       <soundCast>ShotChargeRifle</soundCast>
       <soundCastTail>GunTail_Medium</soundCastTail>
       <muzzleFlashScale>9</muzzleFlashScale>
-        <targetParams>
-          <canTargetLocations>true</canTargetLocations>
-        </targetParams>
+      <targetParams>
+        <canTargetLocations>true</canTargetLocations>
+      </targetParams>
     </Properties>
     <AmmoUser>
       <magazineSize>10</magazineSize>
@@ -123,8 +122,8 @@
       <ammoSet>AmmoSet_CraftedPsionicLancer</ammoSet>
     </AmmoUser>
     <FireModes>
-    	<aiUseBurstMode>FALSE</aiUseBurstMode>
-    	<aiAimMode>AimedShot</aiAimMode>
+      <aiUseBurstMode>FALSE</aiUseBurstMode>
+      <aiAimMode>AimedShot</aiAimMode>
     </FireModes>
     <weaponTags>
       <li>CraftedCrystalGunMed</li>
@@ -143,13 +142,13 @@
       <Bulk>4.50</Bulk>
       <WorkToMake>45000</WorkToMake>
     </statBases>
-	<costList>
-	  <Crystal>60</Crystal>
+    <costList>
+      <Crystal>60</Crystal>
       <RefinedCrystal>10</RefinedCrystal>
       <Component>5</Component>
     </costList>
     <Properties>
-		<recoilAmount>0.20</recoilAmount>
+      <recoilAmount>0.20</recoilAmount>
       <verbClass>CombatExtended.Verb_ShootCE</verbClass>
       <hasStandardCommand>true</hasStandardCommand>
       <defaultProjectile>Bullet_ShardRifle</defaultProjectile>
@@ -158,11 +157,11 @@
       <soundCast>ShotChargeRifle</soundCast>
       <soundCastTail>GunTail_Medium</soundCastTail>
       <muzzleFlashScale>9</muzzleFlashScale>
-	  <ticksBetweenBurstShots>6</ticksBetweenBurstShots>
-        <burstShotCount>4</burstShotCount>
-        <targetParams>
-          <canTargetLocations>true</canTargetLocations>
-        </targetParams>
+      <ticksBetweenBurstShots>6</ticksBetweenBurstShots>
+      <burstShotCount>4</burstShotCount>
+      <targetParams>
+        <canTargetLocations>true</canTargetLocations>
+      </targetParams>
     </Properties>
     <AmmoUser>
       <magazineSize>24</magazineSize>
@@ -170,14 +169,14 @@
       <ammoSet>AmmoSet_ShardRifle</ammoSet>
     </AmmoUser>
     <FireModes>
-    	<aiUseBurstMode>FALSE</aiUseBurstMode>
-    	<aiAimMode>AimedShot</aiAimMode>
+      <aiUseBurstMode>FALSE</aiUseBurstMode>
+      <aiAimMode>AimedShot</aiAimMode>
     </FireModes>
     <weaponTags>
       <li>CrystalShardGunMed</li>
     </weaponTags>
   </Operation>
-  
+
   <Operation Class="CombatExtended.PatchOperationMakeGunCECompatible">
     <defName>Gun_ShardScatterer</defName>
     <statBases>
@@ -189,13 +188,13 @@
       <Bulk>4.50</Bulk>
       <WorkToMake>30000</WorkToMake>
     </statBases>
-	<costList>
-	  <Crystal>80</Crystal>
+    <costList>
+      <Crystal>80</Crystal>
       <RefinedCrystal>10</RefinedCrystal>
       <Component>6</Component>
     </costList>
     <Properties>
-		<recoilAmount>0.30</recoilAmount>
+      <recoilAmount>0.30</recoilAmount>
       <verbClass>CombatExtended.Verb_ShootCE</verbClass>
       <hasStandardCommand>true</hasStandardCommand>
       <defaultProjectile>Bullet_ShardShotgun</defaultProjectile>
@@ -204,11 +203,11 @@
       <soundCast>ShotChargeRifle</soundCast>
       <soundCastTail>GunTail_Medium</soundCastTail>
       <muzzleFlashScale>9</muzzleFlashScale>
-	  <ticksBetweenBurstShots>0</ticksBetweenBurstShots>
-        <burstShotCount>11</burstShotCount>
-        <targetParams>
-          <canTargetLocations>true</canTargetLocations>
-        </targetParams>
+      <ticksBetweenBurstShots>0</ticksBetweenBurstShots>
+      <burstShotCount>11</burstShotCount>
+      <targetParams>
+        <canTargetLocations>true</canTargetLocations>
+      </targetParams>
     </Properties>
     <AmmoUser>
       <magazineSize>11</magazineSize>
@@ -216,12 +215,12 @@
       <ammoSet>AmmoSet_ShardShotgun</ammoSet>
     </AmmoUser>
     <FireModes>
-    	<aiUseBurstMode>FALSE</aiUseBurstMode>
-    	<aiAimMode>AimedShot</aiAimMode>
+      <aiUseBurstMode>FALSE</aiUseBurstMode>
+      <aiAimMode>AimedShot</aiAimMode>
     </FireModes>
     <weaponTags>
       <li>CrystalShardGunMed</li>
     </weaponTags>
   </Operation>
-  
+
 </Patch>

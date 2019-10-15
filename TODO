@@ -2,7 +2,7 @@ Find correlation between old PawnKinds_CrystalRebel to new PawnKinds_Pirate and 
 Might need to add armor ratings to humanlike pawns. will see
 
 Weapons_CrystalBuildableGuns (patch):
-    [] Gun_ShardPistol
+    [x] Gun_ShardPistol
     [] Gun_CrystalCraftedPsionicRifle
     [] Gun_CrystalCraftedPsionicLightLancer
     [] Gun_ShardRifle
