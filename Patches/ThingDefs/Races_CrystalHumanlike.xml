@@ -2,13 +2,13 @@
 <Patch>
 
 	<!-- REVIEW: change to use CE RPG inventory -->
-	<!-- <Operation Class="PatchOperationReplace">
+	<Operation Class="PatchOperationReplace">
 		<success>Always</success>
 		<xpath>*/ThingDef[@Name="CrystalBasePawn"]/inspectorTabs/li[.="ITab_Pawn_Gear"]</xpath>
 		<value>
-			<li>CombatExtended.ITab_Inventory</li>
+			<li>Sandy_Detailed_RPG_Inventory.Sandy_Detailed_RPG_GearTab</li>
 		</value>
-	</Operation> -->
+	</Operation>
 
 	<Operation Class="PatchOperationAdd">
 		<success>Always</success>
