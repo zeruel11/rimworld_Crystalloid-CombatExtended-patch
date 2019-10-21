@@ -5,8 +5,8 @@ Weapons_CrystalBuildableGuns (patch):
     [x] Gun_ShardPistol
     [x] Gun_CrystalCraftedPsionicRifle
     [x] Gun_CrystalCraftedPsionicLightLancer
-    [] Gun_ShardRifle
-    [] Gun_ShardScatterer
+    [x] Gun_ShardRifle
+    [x] Gun_ShardScatterer
 
 Weapons_CrystalBuildableGuns (rewrite):
-    [] Gun_CrystalCycleCannon
+    [x] Gun_CrystalCycleCannon

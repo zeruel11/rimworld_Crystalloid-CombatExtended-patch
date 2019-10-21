@@ -142,21 +142,20 @@
       <ShotSpread>0.1</ShotSpread>
       <SwayFactor>1.5</SwayFactor>
       <Bulk>4.50</Bulk>
-      <WorkToMake>45000</WorkToMake>
+      <WorkToMake>12000</WorkToMake>
     </statBases>
     <costList>
-      <Crystal>60</Crystal>
-      <RefinedCrystal>10</RefinedCrystal>
-      <Component>5</Component>
+      <Crysteel>60</Crysteel>
+      <ComponentIndustrial>6</ComponentIndustrial>
     </costList>
     <Properties>
       <recoilAmount>0.20</recoilAmount>
       <verbClass>CombatExtended.Verb_ShootCE</verbClass>
       <hasStandardCommand>true</hasStandardCommand>
       <defaultProjectile>Bullet_ShardRifle</defaultProjectile>
-      <warmupTime>0.8</warmupTime>
+      <warmupTime>0.84</warmupTime>
       <range>26</range>
-      <soundCast>ShotChargeRifle</soundCast>
+      <soundCast>CW_ShardRifle</soundCast>
       <soundCastTail>GunTail_Medium</soundCastTail>
       <muzzleFlashScale>9</muzzleFlashScale>
       <ticksBetweenBurstShots>6</ticksBetweenBurstShots>
@@ -182,37 +181,36 @@
   <Operation Class="CombatExtended.PatchOperationMakeGunCECompatible">
     <defName>Gun_ShardScatterer</defName>
     <statBases>
-      <Mass>3.50</Mass>
-      <RangedWeapon_Cooldown>1.39</RangedWeapon_Cooldown>
+      <Mass>3.7</Mass>
+      <RangedWeapon_Cooldown>1.6</RangedWeapon_Cooldown>
       <SightsEfficiency>1.0</SightsEfficiency>
       <ShotSpread>0.18</ShotSpread>
       <SwayFactor>1.5</SwayFactor>
-      <Bulk>4.50</Bulk>
-      <WorkToMake>30000</WorkToMake>
+      <Bulk>4.70</Bulk>
+      <WorkToMake>12000</WorkToMake>
     </statBases>
     <costList>
-      <Crystal>80</Crystal>
-      <RefinedCrystal>10</RefinedCrystal>
-      <Component>6</Component>
+      <Crysteel>80</Crysteel>
+      <ComponentIndustrial>6</ComponentIndustrial>
     </costList>
     <Properties>
       <recoilAmount>0.30</recoilAmount>
       <verbClass>CombatExtended.Verb_ShootCE</verbClass>
       <hasStandardCommand>true</hasStandardCommand>
       <defaultProjectile>Bullet_ShardShotgun</defaultProjectile>
-      <warmupTime>0.9</warmupTime>
+      <warmupTime>1</warmupTime>
       <range>17</range>
-      <soundCast>ShotChargeRifle</soundCast>
+      <soundCast>CW_ShardRifle</soundCast>
       <soundCastTail>GunTail_Medium</soundCastTail>
       <muzzleFlashScale>9</muzzleFlashScale>
       <ticksBetweenBurstShots>0</ticksBetweenBurstShots>
-      <burstShotCount>11</burstShotCount>
+      <burstShotCount>9</burstShotCount>
       <targetParams>
         <canTargetLocations>true</canTargetLocations>
       </targetParams>
     </Properties>
     <AmmoUser>
-      <magazineSize>11</magazineSize>
+      <magazineSize>9</magazineSize>
       <reloadTime>4.25</reloadTime>
       <ammoSet>AmmoSet_ShardShotgun</ammoSet>
     </AmmoUser>
@@ -222,6 +220,51 @@
     </FireModes>
     <weaponTags>
       <li>CrystalShardGunMed</li>
+    </weaponTags>
+  </Operation>
+
+  <Operation Class="CombatExtended.PatchOperationMakeGunCECompatible">
+    <defName>Gun_CrystalCycleCannon</defName>
+    <statBases>
+      <Mass>9.50</Mass>
+      <RangedWeapon_Cooldown>1.7</RangedWeapon_Cooldown>
+      <SightsEfficiency>1.0</SightsEfficiency>
+      <ShotSpread>0.15</ShotSpread>
+      <SwayFactor>1.5</SwayFactor>
+      <Bulk>9.50</Bulk>
+      <WorkToMake>16000</WorkToMake>
+    </statBases>
+    <costList>
+      <Crysteel>160</Crysteel>
+      <ComponentIndustrial>8</ComponentIndustrial>
+    </costList>
+    <Properties>
+		<recoilAmount>0.20</recoilAmount>
+      <verbClass>CombatExtended.Verb_ShootCE</verbClass>
+      <hasStandardCommand>true</hasStandardCommand>
+      <defaultProjectile>Bullet_CCycleCannon</defaultProjectile>
+      <warmupTime>1.24</warmupTime>
+      <range>30</range>
+      <soundCast>CW_CycleCannon</soundCast>
+      <soundCastTail>GunTail_Light</soundCastTail>
+      <muzzleFlashScale>9</muzzleFlashScale>
+	  <ticksBetweenBurstShots>4</ticksBetweenBurstShots>
+        <burstShotCount>18</burstShotCount>
+        <targetParams>
+          <canTargetLocations>true</canTargetLocations>
+        </targetParams>
+    </Properties>
+    <AmmoUser>
+      <magazineSize>360</magazineSize>
+      <reloadTime>4.25</reloadTime>
+      <ammoSet>AmmoSet_PsionicRifle</ammoSet>
+    </AmmoUser>
+    <FireModes>
+    	<aiUseBurstMode>FALSE</aiUseBurstMode>
+    	<aiAimMode>AimedShot</aiAimMode>
+    </FireModes>
+    <weaponTags>
+      <li>CrystalGunHeavy</li>
     </weaponTags>
   </Operation>
 
