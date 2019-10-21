@@ -13,8 +13,8 @@
       <WorkToMake>4000</WorkToMake>
     </statBases>
     <costList>
-      <Crysteel>40</Crysteel>
-      <ComponentIndustrial>2</ComponentIndustrial>
+      <Crysteel>60</Crysteel>
+      <ComponentIndustrial>5</ComponentIndustrial>
     </costList>
     <Properties>
       <verbClass>CombatExtended.Verb_ShootCE</verbClass>
@@ -51,21 +51,21 @@
       <ShotSpread>0.1</ShotSpread>
       <SwayFactor>1.5</SwayFactor>
       <Bulk>4.50</Bulk>
-      <WorkToMake>45000</WorkToMake>
+      <WorkToMake>15000</WorkToMake>
     </statBases>
     <costList>
-      <RefinedCrystal>25</RefinedCrystal>
-      <Component>6</Component>
+      <Crysteel>60</Crysteel>
+      <ComponentIndustrial>5</ComponentIndustrial>
     </costList>
     <Properties>
       <recoilAmount>0.20</recoilAmount>
       <verbClass>CombatExtended.Verb_ShootCE</verbClass>
       <hasStandardCommand>true</hasStandardCommand>
-      <defaultProjectile>Bullet_CraftedPsionicRifle</defaultProjectile>
-      <warmupTime>0.78</warmupTime>
+      <defaultProjectile>Bullet_CPsionicRifle</defaultProjectile>
+      <warmupTime>0.9</warmupTime>
       <range>31</range>
-      <soundCast>ShotChargeRifle</soundCast>
-      <soundCastTail>GunTail_Medium</soundCastTail>
+      <soundCast>CW_CraftedPsionicRifle</soundCast>
+      <soundCastTail>GunTail_Light</soundCastTail>
       <muzzleFlashScale>9</muzzleFlashScale>
       <ticksBetweenBurstShots>7</ticksBetweenBurstShots>
       <burstShotCount>3</burstShotCount>
@@ -84,6 +84,7 @@
     </FireModes>
     <weaponTags>
       <li>CraftedCrystalGunMed</li>
+      <li>CrystalGunMed</li>
     </weaponTags>
   </Operation>
 
@@ -96,11 +97,11 @@
       <ShotSpread>0.1</ShotSpread>
       <SwayFactor>1.5</SwayFactor>
       <Bulk>4.50</Bulk>
-      <WorkToMake>55000</WorkToMake>
+      <WorkToMake>15000</WorkToMake>
     </statBases>
     <costList>
-      <RefinedCrystal>30</RefinedCrystal>
-      <Component>12</Component>
+      <Crysteel>120</Crysteel>
+      <ComponentIndustrial>12</ComponentIndustrial>
     </costList>
     <Properties>
       <recoilAmount>0.20</recoilAmount>
@@ -109,8 +110,8 @@
       <defaultProjectile>Bullet_CraftedPsionicLancer</defaultProjectile>
       <warmupTime>1.9</warmupTime>
       <range>37</range>
-      <soundCast>ShotChargeRifle</soundCast>
-      <soundCastTail>GunTail_Medium</soundCastTail>
+      <soundCast>CW_CraftedPsionicSniper</soundCast>
+      <soundCastTail>GunTail_Heavy</soundCastTail>
       <muzzleFlashScale>9</muzzleFlashScale>
       <targetParams>
         <canTargetLocations>true</canTargetLocations>
@@ -127,6 +128,7 @@
     </FireModes>
     <weaponTags>
       <li>CraftedCrystalGunMed</li>
+      <li>CrystalSniper</li>
     </weaponTags>
   </Operation>
 
