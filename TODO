@@ -10,3 +10,11 @@ Weapons_CrystalBuildableGuns (patch):
 
 Weapons_CrystalBuildableGuns (rewrite):
     [x] Gun_CrystalCycleCannon
+
+AmmoSet (advanced): 
+    [] AmmoSet_ShardPistol
+    [] AmmoSet_CraftedPsionicRifle
+    [] AmmoSet_CraftedPsionicLancer
+    [] AmmoSet_ShardRifle
+    [] AmmoSet_ShardShotgun
+    [] AmmoSet_PsionicRifle
