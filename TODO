@@ -12,7 +12,7 @@ Weapons_CrystalBuildableGuns (rewrite):
     [x] Gun_CrystalCycleCannon
 
 AmmoSet (advanced): 
-    [] AmmoSet_ShardPistol
+    [x] AmmoSet_ShardPistol
     [] AmmoSet_CraftedPsionicRifle
     [] AmmoSet_CraftedPsionicLancer
     [] AmmoSet_ShardRifle
