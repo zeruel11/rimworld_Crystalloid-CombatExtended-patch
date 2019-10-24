@@ -4,16 +4,16 @@ Might need to add armor ratings to humanlike pawns. will see
 Weapons_CrystalBuildableGuns (patch):
     [x] Gun_ShardPistol
     [x] Gun_CrystalCraftedPsionicRifle
-    [x] Gun_CrystalCraftedPsionicLightLancer
-    [x] Gun_ShardRifle
-    [x] Gun_ShardScatterer
+    [] Gun_CrystalCraftedPsionicLightLancer
+    [] Gun_ShardRifle
+    [] Gun_ShardScatterer
 
 Weapons_CrystalBuildableGuns (rewrite):
-    [x] Gun_CrystalCycleCannon
+    [] Gun_CrystalCycleCannon
 
 AmmoSet (advanced): 
     [x] AmmoSet_ShardPistol
-    [] AmmoSet_CraftedPsionicRifle
+    [x] AmmoSet_CraftedPsionicRifle
     [] AmmoSet_CraftedPsionicLancer
     [] AmmoSet_ShardRifle
     [] AmmoSet_ShardShotgun

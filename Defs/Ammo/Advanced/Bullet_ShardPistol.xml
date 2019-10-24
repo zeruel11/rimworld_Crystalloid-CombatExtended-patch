@@ -39,7 +39,7 @@
     <defName>Ammo_ShardPistol</defName>
     <label>Shard Pistol Cartridge</label>
     <graphicData>
-      <texPath>Things/Ammo/Rifle/FMJ</texPath>
+      <texPath>Things/Ammo/Charged/Regular</texPath>
       <graphicClass>Graphic_StackCount</graphicClass>
     </graphicData>
     <statBases>
@@ -63,7 +63,7 @@
 
   <ThingDef Class="CombatExtended.AmmoDef" ParentName="BaseShardPistol">
     <defName>Bullet_ShardPistol</defName>
-    <label>pistol shard</label>
+    <label>shard pistol</label>
     <projectile Class="CombatExtended.ProjectilePropertiesCE">
       <damageAmountBase>3</damageAmountBase>
       <armorPenetrationBase>0.35</armorPenetrationBase>

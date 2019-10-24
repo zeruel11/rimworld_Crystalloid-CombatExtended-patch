@@ -1,6 +1,8 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <Patch>
 
+  <!-- ================== Shard Pistol ================== -->
+
   <Operation Class="CombatExtended.PatchOperationMakeGunCECompatible">
     <defName>Gun_ShardPistol</defName>
     <statBases>
@@ -43,7 +45,27 @@
     </weaponTags>
   </Operation>
 
-  <!-- <Operation Class="CombatExtended.PatchOperationMakeGunCECompatible">
+  <!-- <Operation Class="PatchOperationReplace">
+    <xpath>Defs/ThingDef[defName="Gun_ShardPistol"]/tools</xpath>
+    <value>
+      <tools>
+        <li Class="CombatExtended.ToolCE">
+          <label>barrel</label>
+          <capacities>
+            <li>Blunt</li>
+            <li>Poke</li>
+          </capacities>
+          <power>8</power>
+          <cooldownTime>1.6</cooldownTime>
+          <linkedBodyPartsGroup>Barrel</linkedBodyPartsGroup>
+        </li>
+      </tools>
+    </value>
+  </Operation> -->
+
+  <!-- ================== Psionic Rifle ================== -->
+
+  <Operation Class="CombatExtended.PatchOperationMakeGunCECompatible">
     <defName>Gun_CrystalCraftedPsionicRifle</defName>
     <statBases>
       <Mass>3.50</Mass>
@@ -84,7 +106,25 @@
     </weaponTags>
   </Operation>
 
-  <Operation Class="CombatExtended.PatchOperationMakeGunCECompatible">
+  <!-- <Operation Class="PatchOperationReplace">
+    <xpath>Defs/ThingDef[defName="Gun_CrystalCraftedPsionicRifle"]/tools</xpath>
+    <value>
+      <tools>
+        <li Class="CombatExtended.ToolCE">
+          <label>barrel</label>
+          <capacities>
+            <li>Blunt</li>
+            <li>Poke</li>
+          </capacities>
+          <power>10</power>
+          <cooldownTime>1.9</cooldownTime>
+          <linkedBodyPartsGroup>Barrel</linkedBodyPartsGroup>
+        </li>
+      </tools>
+    </value>
+  </Operation> -->
+
+  <!-- <Operation Class="CombatExtended.PatchOperationMakeGunCECompatible">
     <defName>Gun_CrystalCraftedPsionicLightLancer</defName>
     <statBases>
       <Mass>3.50</Mass>
