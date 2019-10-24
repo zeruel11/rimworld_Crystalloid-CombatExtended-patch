@@ -124,7 +124,9 @@
     </value>
   </Operation> -->
 
-  <!-- <Operation Class="CombatExtended.PatchOperationMakeGunCECompatible">
+  <!-- ================== Psionic Lancer ================== -->
+
+  <Operation Class="CombatExtended.PatchOperationMakeGunCECompatible">
     <defName>Gun_CrystalCraftedPsionicLightLancer</defName>
     <statBases>
       <Mass>3.50</Mass>
@@ -163,6 +165,25 @@
     </weaponTags>
   </Operation>
 
+  <!-- <Operation Class="PatchOperationReplace">
+    <xpath>Defs/ThingDef[defName="Gun_CrystalCraftedPsionicRifle"]/tools</xpath>
+    <value>
+      <tools>
+        <li Class="CombatExtended.ToolCE">
+          <label>barrel</label>
+          <capacities>
+            <li>Blunt</li>
+            <li>Poke</li>
+          </capacities>
+          <power>10</power>
+          <cooldownTime>1.9</cooldownTime>
+          <linkedBodyPartsGroup>Barrel</linkedBodyPartsGroup>
+        </li>
+      </tools>
+    </value>
+  </Operation> -->
+
+  <!-- ================== Shard Rifle ================== -->
 
   <Operation Class="CombatExtended.PatchOperationMakeGunCECompatible">
     <defName>Gun_ShardRifle</defName>
@@ -209,6 +230,8 @@
     </weaponTags>
   </Operation>
 
+  <!-- ================== Shard Scatterer ================== -->
+
   <Operation Class="CombatExtended.PatchOperationMakeGunCECompatible">
     <defName>Gun_ShardScatterer</defName>
     <statBases>
@@ -254,6 +277,8 @@
     </weaponTags>
   </Operation>
 
+  <!-- ================== Cycle Cannon ================== -->
+
   <Operation Class="CombatExtended.PatchOperationMakeGunCECompatible">
     <defName>Gun_CrystalCycleCannon</defName>
     <statBases>
@@ -297,6 +322,6 @@
     <weaponTags>
       <li>CrystalGunHeavy</li>
     </weaponTags>
-  </Operation> -->
+  </Operation>
 
 </Patch>
