@@ -1,2 +1,2 @@
 0.2: Added new NeutralPrism, Preserver, and Specter to patches. Changed old Prisms to follow rewrite values. CrystalHumanlike follow new values
-0.3: 
+0.4: Finished all weapon and ammo types. Psionic weapons have infinite ammo but longer cooldown. May have to rebalance this a bit. Also for now ammo recipes follow their equivalent charged ammo in CE, might consider changing to use them instead to reduce cluttering.

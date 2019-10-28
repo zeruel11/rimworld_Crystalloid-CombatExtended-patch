@@ -45,6 +45,7 @@
     </weaponTags>
   </Operation>
 
+<!-- TODO: add operation replaces and change to use operation find mod -->
   <!-- <Operation Class="PatchOperationReplace">
     <xpath>Defs/ThingDef[defName="Gun_ShardPistol"]/tools</xpath>
     <value>

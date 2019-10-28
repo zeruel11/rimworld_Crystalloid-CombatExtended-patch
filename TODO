@@ -5,16 +5,18 @@ Weapons_CrystalBuildableGuns (patch):
     [x] Gun_ShardPistol
     [x] Gun_CrystalCraftedPsionicRifle
     [x] Gun_CrystalCraftedPsionicLightLancer
-    [] Gun_ShardRifle
-    [] Gun_ShardScatterer
+    [x] Gun_ShardRifle
+    [x] Gun_ShardScatterer
 
 Weapons_CrystalBuildableGuns (rewrite):
-    [] Gun_CrystalCycleCannon
+    [x] Gun_CrystalCycleCannon
 
 AmmoSet (advanced): 
     [x] AmmoSet_ShardPistol
     [x] AmmoSet_CraftedPsionicRifle
     [x] AmmoSet_CraftedPsionicLancer
-    [] AmmoSet_ShardRifle
-    [] AmmoSet_ShardShotgun
-    [] AmmoSet_PsionicRifle
+    [x] AmmoSet_ShardRifle
+    [x] AmmoSet_ShardShotgun
+    [x] AmmoSet_PsionicRifle
+
+Recipe and damage balancing
