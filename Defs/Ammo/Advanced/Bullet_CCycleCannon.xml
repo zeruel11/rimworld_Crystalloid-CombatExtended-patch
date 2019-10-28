@@ -52,7 +52,7 @@
 
   <ThingDef Class="CombatExtended.AmmoDef" Name="BaseCycleCannon" ParentName="BaseBullet" Abstract="true">
     <graphicData>
-      <texPath>Things/PSG/Cycle_Cannon</texPath>
+      <texPath>Things/Projectile/PsionicBullet</texPath>
       <graphicClass>Graphic_Single</graphicClass>
     </graphicData>
     <projectile>
@@ -66,7 +66,7 @@
     <label>psionic beam</label>
     <projectile Class="CombatExtended.ProjectilePropertiesCE">
       <damageAmountBase>5</damageAmountBase>
-      <armorPenetration>0.6</armorPenetration>
+      <armorPenetrationBase>0.6</armorPenetrationBase>
     </projectile>
   </ThingDef>
 	
