@@ -85,6 +85,8 @@
 		</value>
 	</Operation>
 
+	<!-- FIXME: what exactly is this for ?? why invert comps and add CE gizmo ?? -->
+	<!-- is this used to check existing comps? -->
 	<Operation Class="PatchOperationSequence">
 		<success>Always</success>
 		<operations>
