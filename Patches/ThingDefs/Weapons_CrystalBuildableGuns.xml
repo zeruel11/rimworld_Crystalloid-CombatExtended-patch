@@ -1,14 +1,16 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <Patch>
 
+  <!-- TODO: add operation replaces and change to use operation find mod -->
   <Operation Class="PatchOperationSequence">
     <success>Always</success>
     <operations>
       <li Class="CombatExtended.PatchOperationFindMod">
-        <modName>Crystalloid</modName>
+        <modName>Crystalloid (Rewrite)</modName>
       </li>
 
       <!-- ================== Shard Pistol ================== -->
+
       <li Class="CombatExtended.PatchOperationMakeGunCECompatible">
         <defName>Gun_ShardPistol</defName>
         <statBases>
@@ -69,7 +71,156 @@
         </value>
       </li>
 
+      <!-- ================== Shard Rifle ================== -->
+
+      <li Class="CombatExtended.PatchOperationMakeGunCECompatible">
+        <defName>Gun_ShardRifle</defName>
+        <statBases>
+          <Mass>3.50</Mass>
+          <RangedWeapon_Cooldown>1.39</RangedWeapon_Cooldown>
+          <SightsEfficiency>1.0</SightsEfficiency>
+          <ShotSpread>0.1</ShotSpread>
+          <SwayFactor>1.5</SwayFactor>
+          <Bulk>4.50</Bulk>
+          <WorkToMake>12000</WorkToMake>
+        </statBases>
+        <costList>
+          <Crysteel>60</Crysteel>
+          <ComponentIndustrial>6</ComponentIndustrial>
+        </costList>
+        <Properties>
+          <recoilAmount>0.20</recoilAmount>
+          <verbClass>CombatExtended.Verb_ShootCE</verbClass>
+          <hasStandardCommand>true</hasStandardCommand>
+          <defaultProjectile>Bullet_ShardRifle</defaultProjectile>
+          <warmupTime>0.84</warmupTime>
+          <range>26</range>
+          <soundCast>CW_ShardRifle</soundCast>
+          <soundCastTail>GunTail_Medium</soundCastTail>
+          <muzzleFlashScale>9</muzzleFlashScale>
+          <ticksBetweenBurstShots>6</ticksBetweenBurstShots>
+          <burstShotCount>4</burstShotCount>
+          <targetParams>
+            <canTargetLocations>true</canTargetLocations>
+          </targetParams>
+        </Properties>
+        <AmmoUser>
+          <magazineSize>24</magazineSize>
+          <reloadTime>4.25</reloadTime>
+          <ammoSet>AmmoSet_ShardRifle</ammoSet>
+        </AmmoUser>
+        <FireModes>
+          <aiUseBurstMode>FALSE</aiUseBurstMode>
+          <aiAimMode>AimedShot</aiAimMode>
+        </FireModes>
+        <weaponTags>
+          <li>CrystalShardGunMed</li>
+        </weaponTags>
+      </li>
+
+      <li Class="PatchOperationReplace">
+        <xpath>Defs/ThingDef[defName="Gun_ShardRifle"]/tools</xpath>
+        <value>
+          <tools>
+            <li Class="CombatExtended.ToolCE">
+              <label>stock</label>
+              <capacities>
+                <li>Blunt</li>
+              </capacities>
+              <power>9</power>
+              <cooldownTime>1.8</cooldownTime>
+              <linkedBodyPartsGroup>Stock</linkedBodyPartsGroup>
+            </li>
+            <li Class="CombatExtended.ToolCE">
+              <label>barrel</label>
+              <capacities>
+                <li>Blunt</li>
+                <li>Poke</li>
+              </capacities>
+              <power>10</power>
+              <cooldownTime>1.9</cooldownTime>
+              <linkedBodyPartsGroup>Barrel</linkedBodyPartsGroup>
+            </li>
+          </tools>
+        </value>
+      </li>
+
+      <!-- ================== Shard Scatterer ================== -->
+
+      <li Class="CombatExtended.PatchOperationMakeGunCECompatible">
+        <defName>Gun_ShardScatterer</defName>
+        <statBases>
+          <Mass>3.7</Mass>
+          <RangedWeapon_Cooldown>1.6</RangedWeapon_Cooldown>
+          <SightsEfficiency>1.0</SightsEfficiency>
+          <ShotSpread>0.18</ShotSpread>
+          <SwayFactor>1.5</SwayFactor>
+          <Bulk>4.70</Bulk>
+          <WorkToMake>12000</WorkToMake>
+        </statBases>
+        <costList>
+          <Crysteel>80</Crysteel>
+          <ComponentIndustrial>6</ComponentIndustrial>
+        </costList>
+        <Properties>
+          <recoilAmount>0.30</recoilAmount>
+          <verbClass>CombatExtended.Verb_ShootCE</verbClass>
+          <hasStandardCommand>true</hasStandardCommand>
+          <defaultProjectile>Bullet_ShardShotgun</defaultProjectile>
+          <warmupTime>1</warmupTime>
+          <range>17</range>
+          <soundCast>CW_ShardRifle</soundCast>
+          <soundCastTail>GunTail_Medium</soundCastTail>
+          <muzzleFlashScale>9</muzzleFlashScale>
+          <ticksBetweenBurstShots>0</ticksBetweenBurstShots>
+          <burstShotCount>9</burstShotCount>
+          <targetParams>
+            <canTargetLocations>true</canTargetLocations>
+          </targetParams>
+        </Properties>
+        <AmmoUser>
+          <magazineSize>9</magazineSize>
+          <reloadTime>4.25</reloadTime>
+          <ammoSet>AmmoSet_ShardShotgun</ammoSet>
+        </AmmoUser>
+        <FireModes>
+          <aiUseBurstMode>FALSE</aiUseBurstMode>
+          <aiAimMode>AimedShot</aiAimMode>
+        </FireModes>
+        <weaponTags>
+          <li>CrystalShardGunMed</li>
+        </weaponTags>
+      </li>
+
+      <li Class="PatchOperationReplace">
+        <xpath>Defs/ThingDef[defName="Gun_ShardScatterer"]/tools</xpath>
+        <value>
+          <tools>
+            <li Class="CombatExtended.ToolCE">
+              <label>stock</label>
+              <capacities>
+                <li>Blunt</li>
+              </capacities>
+              <power>9</power>
+              <cooldownTime>1.8</cooldownTime>
+              <linkedBodyPartsGroup>Stock</linkedBodyPartsGroup>
+            </li>
+            <li Class="CombatExtended.ToolCE">
+              <label>barrel</label>
+              <capacities>
+                <li>Blunt</li>
+                <li>Poke</li>
+              </capacities>
+              <power>10</power>
+              <cooldownTime>1.9</cooldownTime>
+              <linkedBodyPartsGroup>Barrel</linkedBodyPartsGroup>
+            </li>
+          </tools>
+        </value>
+      </li>
+
       <!-- ================== Psionic Rifle ================== -->
+
       <li Class="CombatExtended.PatchOperationMakeGunCECompatible">
         <defName>Gun_CrystalCraftedPsionicRifle</defName>
         <statBases>
@@ -116,6 +267,15 @@
         <value>
           <tools>
             <li Class="CombatExtended.ToolCE">
+              <label>stock</label>
+              <capacities>
+                <li>Blunt</li>
+              </capacities>
+              <power>9</power>
+              <cooldownTime>1.8</cooldownTime>
+              <linkedBodyPartsGroup>Stock</linkedBodyPartsGroup>
+            </li>
+            <li Class="CombatExtended.ToolCE">
               <label>barrel</label>
               <capacities>
                 <li>Blunt</li>
@@ -130,6 +290,7 @@
       </li>
 
       <!-- ================== Psionic Lancer ================== -->
+
       <li Class="CombatExtended.PatchOperationMakeGunCECompatible">
         <defName>Gun_CrystalCraftedPsionicLightLancer</defName>
         <statBases>
@@ -169,159 +330,93 @@
         </weaponTags>
       </li>
 
-      <!-- <li Class="PatchOperationReplace">
-    <xpath>Defs/ThingDef[defName="Gun_CrystalCraftedPsionicRifle"]/tools</xpath>
-    <value>
-      <tools>
-        <li Class="CombatExtended.ToolCE">
-          <label>barrel</label>
-          <capacities>
-            <li>Blunt</li>
-            <li>Poke</li>
-          </capacities>
-          <power>10</power>
-          <cooldownTime>1.9</cooldownTime>
-          <linkedBodyPartsGroup>Barrel</linkedBodyPartsGroup>
-        </li>
-      </tools>
-    </value>
-  </li> -->
+      <li Class="PatchOperationReplace">
+        <xpath>Defs/ThingDef[defName="Gun_CrystalCraftedPsionicLightLancer"]/tools</xpath>
+        <value>
+          <tools>
+            <li Class="CombatExtended.ToolCE">
+              <label>stock</label>
+              <capacities>
+                <li>Blunt</li>
+              </capacities>
+              <power>9</power>
+              <cooldownTime>1.8</cooldownTime>
+              <linkedBodyPartsGroup>Stock</linkedBodyPartsGroup>
+            </li>
+            <li Class="CombatExtended.ToolCE">
+              <label>barrel</label>
+              <capacities>
+                <li>Blunt</li>
+                <li>Poke</li>
+              </capacities>
+              <power>10</power>
+              <cooldownTime>1.9</cooldownTime>
+              <linkedBodyPartsGroup>Barrel</linkedBodyPartsGroup>
+            </li>
+          </tools>
+        </value>
+      </li>
+
+      <!-- ================== Cycle Cannon ================== -->
+
+      <li Class="CombatExtended.PatchOperationMakeGunCECompatible">
+        <defName>Gun_CrystalCycleCannon</defName>
+        <statBases>
+          <Mass>9.50</Mass>
+          <RangedWeapon_Cooldown>2.2</RangedWeapon_Cooldown>
+          <SightsEfficiency>1.0</SightsEfficiency>
+          <ShotSpread>0.15</ShotSpread>
+          <SwayFactor>1.5</SwayFactor>
+          <Bulk>9.50</Bulk>
+          <WorkToMake>16000</WorkToMake>
+        </statBases>
+        <costList>
+          <Crysteel>160</Crysteel>
+          <ComponentIndustrial>8</ComponentIndustrial>
+        </costList>
+        <Properties>
+          <recoilAmount>0.20</recoilAmount>
+          <verbClass>CombatExtended.Verb_ShootCE</verbClass>
+          <hasStandardCommand>true</hasStandardCommand>
+          <defaultProjectile>Bullet_CCycleCannon</defaultProjectile>
+          <warmupTime>1.24</warmupTime>
+          <range>30</range>
+          <soundCast>CW_CycleCannon</soundCast>
+          <soundCastTail>GunTail_Light</soundCastTail>
+          <muzzleFlashScale>9</muzzleFlashScale>
+          <ticksBetweenBurstShots>4</ticksBetweenBurstShots>
+          <burstShotCount>18</burstShotCount>
+          <targetParams>
+            <canTargetLocations>true</canTargetLocations>
+          </targetParams>
+        </Properties>
+        <FireModes>
+          <aiUseBurstMode>FALSE</aiUseBurstMode>
+          <aiAimMode>AimedShot</aiAimMode>
+        </FireModes>
+        <weaponTags>
+          <li>CrystalGunHeavy</li>
+        </weaponTags>
+      </li>
+
+      <li Class="PatchOperationReplace">
+        <xpath>Defs/ThingDef[defName="Gun_CrystalCycleCannon"]/tools</xpath>
+        <value>
+          <tools>
+            <li Class="CombatExtended.ToolCE">
+              <label>barrel</label>
+              <capacities>
+                <li>Blunt</li>
+              </capacities>
+              <power>11.7</power>
+              <cooldownTime>2.6</cooldownTime>
+              <linkedBodyPartsGroup>Barrel</linkedBodyPartsGroup>
+            </li>
+          </tools>
+        </value>
+      </li>
 
     </operations>
   </Operation>
-
-  <!-- TODO: add operation replaces and change to use operation find mod -->
-  <!-- ================== Shard Rifle ================== -->
-  <!-- <Operation Class="CombatExtended.PatchOperationMakeGunCECompatible">
-    <defName>Gun_ShardRifle</defName>
-    <statBases>
-      <Mass>3.50</Mass>
-      <RangedWeapon_Cooldown>1.39</RangedWeapon_Cooldown>
-      <SightsEfficiency>1.0</SightsEfficiency>
-      <ShotSpread>0.1</ShotSpread>
-      <SwayFactor>1.5</SwayFactor>
-      <Bulk>4.50</Bulk>
-      <WorkToMake>12000</WorkToMake>
-    </statBases>
-    <costList>
-      <Crysteel>60</Crysteel>
-      <ComponentIndustrial>6</ComponentIndustrial>
-    </costList>
-    <Properties>
-      <recoilAmount>0.20</recoilAmount>
-      <verbClass>CombatExtended.Verb_ShootCE</verbClass>
-      <hasStandardCommand>true</hasStandardCommand>
-      <defaultProjectile>Bullet_ShardRifle</defaultProjectile>
-      <warmupTime>0.84</warmupTime>
-      <range>26</range>
-      <soundCast>CW_ShardRifle</soundCast>
-      <soundCastTail>GunTail_Medium</soundCastTail>
-      <muzzleFlashScale>9</muzzleFlashScale>
-      <ticksBetweenBurstShots>6</ticksBetweenBurstShots>
-      <burstShotCount>4</burstShotCount>
-      <targetParams>
-        <canTargetLocations>true</canTargetLocations>
-      </targetParams>
-    </Properties>
-    <AmmoUser>
-      <magazineSize>24</magazineSize>
-      <reloadTime>4.25</reloadTime>
-      <ammoSet>AmmoSet_ShardRifle</ammoSet>
-    </AmmoUser>
-    <FireModes>
-      <aiUseBurstMode>FALSE</aiUseBurstMode>
-      <aiAimMode>AimedShot</aiAimMode>
-    </FireModes>
-    <weaponTags>
-      <li>CrystalShardGunMed</li>
-    </weaponTags>
-  </Operation> -->
-
-  <!-- ================== Shard Scatterer ================== -->
-  <!-- <Operation Class="CombatExtended.PatchOperationMakeGunCECompatible">
-    <defName>Gun_ShardScatterer</defName>
-    <statBases>
-      <Mass>3.7</Mass>
-      <RangedWeapon_Cooldown>1.6</RangedWeapon_Cooldown>
-      <SightsEfficiency>1.0</SightsEfficiency>
-      <ShotSpread>0.18</ShotSpread>
-      <SwayFactor>1.5</SwayFactor>
-      <Bulk>4.70</Bulk>
-      <WorkToMake>12000</WorkToMake>
-    </statBases>
-    <costList>
-      <Crysteel>80</Crysteel>
-      <ComponentIndustrial>6</ComponentIndustrial>
-    </costList>
-    <Properties>
-      <recoilAmount>0.30</recoilAmount>
-      <verbClass>CombatExtended.Verb_ShootCE</verbClass>
-      <hasStandardCommand>true</hasStandardCommand>
-      <defaultProjectile>Bullet_ShardShotgun</defaultProjectile>
-      <warmupTime>1</warmupTime>
-      <range>17</range>
-      <soundCast>CW_ShardRifle</soundCast>
-      <soundCastTail>GunTail_Medium</soundCastTail>
-      <muzzleFlashScale>9</muzzleFlashScale>
-      <ticksBetweenBurstShots>0</ticksBetweenBurstShots>
-      <burstShotCount>9</burstShotCount>
-      <targetParams>
-        <canTargetLocations>true</canTargetLocations>
-      </targetParams>
-    </Properties>
-    <AmmoUser>
-      <magazineSize>9</magazineSize>
-      <reloadTime>4.25</reloadTime>
-      <ammoSet>AmmoSet_ShardShotgun</ammoSet>
-    </AmmoUser>
-    <FireModes>
-      <aiUseBurstMode>FALSE</aiUseBurstMode>
-      <aiAimMode>AimedShot</aiAimMode>
-    </FireModes>
-    <weaponTags>
-      <li>CrystalShardGunMed</li>
-    </weaponTags>
-  </Operation> -->
-
-  <!-- ================== Cycle Cannon ================== -->
-  <!-- <Operation Class="CombatExtended.PatchOperationMakeGunCECompatible">
-    <defName>Gun_CrystalCycleCannon</defName>
-    <statBases>
-      <Mass>9.50</Mass>
-      <RangedWeapon_Cooldown>2.2</RangedWeapon_Cooldown>
-      <SightsEfficiency>1.0</SightsEfficiency>
-      <ShotSpread>0.15</ShotSpread>
-      <SwayFactor>1.5</SwayFactor>
-      <Bulk>9.50</Bulk>
-      <WorkToMake>16000</WorkToMake>
-    </statBases>
-    <costList>
-      <Crysteel>160</Crysteel>
-      <ComponentIndustrial>8</ComponentIndustrial>
-    </costList>
-    <Properties>
-      <recoilAmount>0.20</recoilAmount>
-      <verbClass>CombatExtended.Verb_ShootCE</verbClass>
-      <hasStandardCommand>true</hasStandardCommand>
-      <defaultProjectile>Bullet_CCycleCannon</defaultProjectile>
-      <warmupTime>1.24</warmupTime>
-      <range>30</range>
-      <soundCast>CW_CycleCannon</soundCast>
-      <soundCastTail>GunTail_Light</soundCastTail>
-      <muzzleFlashScale>9</muzzleFlashScale>
-      <ticksBetweenBurstShots>4</ticksBetweenBurstShots>
-      <burstShotCount>18</burstShotCount>
-      <targetParams>
-        <canTargetLocations>true</canTargetLocations>
-      </targetParams>
-    </Properties>
-    <FireModes>
-      <aiUseBurstMode>FALSE</aiUseBurstMode>
-      <aiAimMode>AimedShot</aiAimMode>
-    </FireModes>
-    <weaponTags>
-      <li>CrystalGunHeavy</li>
-    </weaponTags>
-  </Operation> -->
 
 </Patch>
