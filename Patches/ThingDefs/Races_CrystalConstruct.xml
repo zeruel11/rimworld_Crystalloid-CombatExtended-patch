@@ -5,7 +5,7 @@
 		<success>Always</success>
 		<operations>
 			<li Class="CombatExtended.PatchOperationFindMod">
-				<modName>Crystalloid</modName>
+				<modName>Crystalloid (Rewrite)</modName>
 			</li>
 			<!-- ========== Crystal Prism ========== -->
 			<li Class="PatchOperationAddModExtension">
