@@ -1,15 +1,18 @@
-Find correlation between old PawnKinds_CrystalRebel to new PawnKinds_Pirate and PawnKinds_Mercenary
-Might need to add armor ratings to humanlike pawns. will see
+✔ Find correlation between old PawnKinds_CrystalRebel to new PawnKinds_Pirate and PawnKinds_Mercenary @done(19-11-06 16:09)
+✘ Might need to add armor ratings to humanlike pawns. will see @cancelled(19-11-06 16:09)
+☐ Recipe and damage balancing @low
+☐ Reorganize file folder structure @low
+☐ Complete faction loadout
 
 Weapons_CrystalBuildableGuns (patch):
-    [x] Gun_ShardPistol
-    [x] Gun_CrystalCraftedPsionicRifle
-    [x] Gun_CrystalCraftedPsionicLightLancer
-    [x] Gun_ShardRifle
-    [x] Gun_ShardScatterer
+    ✔ Gun_ShardPistol @done(19-10-29 16:09)
+    ✔ Gun_CrystalCraftedPsionicRifle @done(19-10-29 16:09)
+    ✔ Gun_CrystalCraftedPsionicLightLancer @done(19-10-29 16:09)
+    ✔ Gun_ShardRifle @done(19-10-29 16:09)
+    ✔ Gun_ShardScatterer @done(19-10-29 16:09)
 
 Weapons_CrystalBuildableGuns (rewrite):
-    [x] Gun_CrystalCycleCannon
+    ✔ Gun_CrystalCycleCannon @done(19-10-29 16:09)
 
 AmmoSet (advanced): 
     [x] AmmoSet_ShardPistol
@@ -19,4 +22,4 @@ AmmoSet (advanced):
     [x] AmmoSet_ShardShotgun
     [x] AmmoSet_PsionicRifle
 
-Recipe and damage balancing
+Archive:
