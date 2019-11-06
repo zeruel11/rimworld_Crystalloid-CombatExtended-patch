@@ -1,5 +1,12 @@
-Find correlation between old PawnKinds_CrystalRebel to new PawnKinds_Pirate and PawnKinds_Mercenary
-Might need to add armor ratings to humanlike pawns. will see
+✔ Find correlation between old PawnKinds_CrystalRebel to new PawnKinds_Pirate and PawnKinds_Mercenary @done(19-11-06 16:09)
+✘ Might need to add armor ratings to humanlike pawns. will see @cancelled(19-11-06 16:09)
+☐ Recipe and damage balancing @low
+☐ Reorganize file folder structure @low
+Complete faction loadout: @testing
+    ✔ PawnKind_Pirate @done(19-11-06 19:43)
+    CrystalloidScavenger ValkyrieThrasher CrystalloidPirate
+    ✔ PawnKind_Mercenary @started(19-11-06 19:39) @done(19-11-06 19:52) @lasted(13m59s)
+    CrystalloidMercenary_Gunner CrystalloidMercenary_Sniper ValkyrieMercenary_Slasher ValkyrieMercenary_Heavy
 
 Weapons_CrystalBuildableGuns (patch):
     [x] Gun_ShardPistol
