@@ -2,6 +2,9 @@
 ✘ Might need to add armor ratings to humanlike pawns. will see @cancelled(19-11-06 16:09)
 ☐ Recipe and damage balancing @low
 ☐ Reorganize file folder structure @low
+☐ Fix multiple damageDef from buildings:
+    - CCrystalWall
+    - CollectiveHub
 Complete faction loadout: @testing
     ✔ PawnKind_Pirate @done(19-11-06 19:43)
     CrystalloidScavenger ValkyrieThrasher CrystalloidPirate

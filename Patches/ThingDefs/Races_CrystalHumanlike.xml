@@ -109,7 +109,7 @@
 
 				<!-- patch CE melee (valkyrie) -->
 				<li Class="PatchOperationAdd">
-					<xpath>*/AlienRace.ThingDef_AlienRace[defName = "Alien_Crystalloid"]/statBases</xpath>
+					<xpath>*/AlienRace.ThingDef_AlienRace[defName = "Alien_CrystalValkyrie"]/statBases</xpath>
 					<value>
 						<MeleeCritChance>1.2</MeleeCritChance>
 						<MeleeParryChance>1</MeleeParryChance>
