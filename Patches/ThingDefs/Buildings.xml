@@ -14,11 +14,11 @@
             <match Class="PatchOperationSequence">
                 <operations>
                     <li Class="PatchOperationRemove">
-                        <xpath>*/ThingDef[defName="CCrystalWall"]/damageMultipliers</xpath>
+                        <xpath>*/ThingDef[defName="CCrystalWall" or defName="CollectiveHub"]/damageMultipliers</xpath>
                     </li>
-                    <li Class="PatchOperationRemove">
-                        <xpath>*/ThingDef[defName="CollectiveHub"]/damageMultipliers</xpath>
-                    </li>
+                    <!-- <li Class="PatchOperationRemove">
+                        <xpath>*/ThingDef[]/damageMultipliers</xpath>
+                    </li> -->
                 </operations>
             </match>
         </match>

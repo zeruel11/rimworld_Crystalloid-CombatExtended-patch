@@ -2,10 +2,12 @@
 ✘ Might need to add armor ratings to humanlike pawns. will see @cancelled(19-11-06 16:09)
 ☐ Recipe and damage balancing @low
 ☐ Reorganize file folder structure @low
-☐ Fix multiple damageDef from buildings: @today @started(19-11-14 17:09)
+☐ Fix Prism and Preserver ranged ability... Custom Prism and Preserver ranged weapon?? @high
+☐ Possibly need to balance crysteel and crystalsilk material for armor @low
+✔ Fix multiple damageDef from buildings: @testing @started(19-11-14 17:09) @done(19-11-14 19:03) @lasted(1h54m43s)
     - CCrystalWall
     - CollectiveHub
-Complete faction loadout: @testing
+Complete faction loadout: @high
     ✔ PawnKind_Pirate @done(19-11-06 19:43)
     CrystalloidScavenger ValkyrieThrasher CrystalloidPirate
     ✔ PawnKind_Mercenary @started(19-11-06 19:39) @done(19-11-06 19:52) @lasted(13m59s)
@@ -29,4 +31,8 @@ AmmoSet (advanced):
     [x] AmmoSet_ShardShotgun
     [x] AmmoSet_PsionicRifle
 
+    Fix the rest of the projectiles:
+        ☐ Weapons_ColossusGrenades
+        ☐ Weapons_Special ??
+        ☐ PawnVerb_Projectiles
 Archive:

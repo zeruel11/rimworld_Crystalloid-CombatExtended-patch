@@ -1,2 +1,3 @@
 R1: Added new NeutralPrism, Preserver, and Specter to patches. Changed old Prisms to follow rewrite values. CrystalHumanlike follow new values
 R2: Finished all weapon and ammo types. Psionic weapons have infinite ammo but longer cooldown. May have to rebalance this a bit. Also for now ammo recipes follow their equivalent charged ammo in CE, might consider changing to use charged ammo instead to reduce cluttering.
+R3: Fixed multiple damageDef error for panel wall and Collective Hub. For now this only removes damage multiplier, might change this if CE allows different armor rating to structures.

@@ -6,5 +6,5 @@
 	<supportedVersions>
 		<li>1.0</li>
 	</supportedVersions>
-	<description>Patches the Crystalloid mod to work with Combat Extended. Might still need lots of rebalancing...</description>
+	<description>Patches the Crystalloid mod to work with Combat Extended. Note this is still incomplete and spams debug with errors, though it is not gamebreaking.</description>
 </ModMetaData>
